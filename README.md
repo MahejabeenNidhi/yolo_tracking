@@ -116,6 +116,17 @@ but if you only want to import the tracking modules you can simply:
 pip install boxmot
 ```
 
+## Instructions
+
+Store data in assets directory
+Store weights in tracking/weights
+
+Example command
+
+```
+python tracking/track.py --source assets/input.mp4 --tracking-method botsort --yolo-model tracking/weights/yolov8_weights.pt --show-trajectories --save-txt --save-id-crops --save --show-labels
+```
+
 ## YOLOv8 | YOLO-NAS | YOLOX examples
 
 <details>
